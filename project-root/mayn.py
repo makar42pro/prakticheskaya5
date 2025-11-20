@@ -1,6 +1,6 @@
 import auth
 import tasks
-import reports # Импортируем новый модуль
+import reports
 import data_store 
 
 def main_menu():
@@ -26,7 +26,7 @@ def main_menu():
             tasks.view_tasks(query if query else None)
         elif choice == '6': tasks.update_task_status()
         elif choice == '7': tasks.delete_task()
-        elif choice == '8': reports.generate_report() # Вызов из нового модуля reports
+        elif choice == '8': reports.generate_report()
         elif choice == '9': break
         else: print("Неверный выбор, попробуйте снова.")
 
