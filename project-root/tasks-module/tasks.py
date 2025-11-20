@@ -7,7 +7,7 @@ def create_task():
 
     title = input("Введите название задачи: ")
     description = input("Введите описание задачи: ")
-    status = "Новая"  # начальный статус
+    status = "Новая" 
     task = {
         'id': data_store.TASK_ID_COUNTER,
         'owner': data_store.CURRENT_USER,
